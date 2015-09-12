@@ -123,7 +123,7 @@ class Some:
     now = len(i.any)
     if now < i.max:    # not full yet, so just keep it   
       i.any += [x]
-    elif r() <= now/i.n:
+    elif r() <= float(now)/i.n:
       i.any[ int(r() * now) ]= x # zap some older value
     #else: forget x
     return i
