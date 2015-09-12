@@ -129,7 +129,7 @@ How?
    9:       now = len(i.any)
   10:       if now < i.max:    # not full yet, so just keep it   
   11:         i.any += [x]
-  12:       elif r() <= now/i.n:
+  12:       elif r() <= float(now)/i.n:
   13:         i.any[ int(r() * now) ]= x # zap some older value
   14:       #else: forget x
   15:       return i
